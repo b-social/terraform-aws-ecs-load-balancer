@@ -34,6 +34,10 @@ resource "aws_elb" "service" {
     Service = var.service_name
   }
 
+  lifecycle {
+    create_before_destroy = true
+  }
+
   dynamic "access_logs" {
     for_each = var.access_logs_bucket != "" ? [1] : []
     content {
