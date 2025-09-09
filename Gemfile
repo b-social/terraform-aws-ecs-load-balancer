@@ -18,3 +18,13 @@ gem 'rubocop-rake'
 gem 'rubocop-rspec'
 gem 'rubyzip'
 gem 'semantic'
+
+gem 'activesupport', '>= 7.0.7'
+
+gem 'rspec-its', '>= 2.0.0'
+
+gem 'rexml', '>= 3.3.9'
+
+gem 'thor', '>= 1.4.0'
+
+gem 'faraday', '>= 2.12.3'
